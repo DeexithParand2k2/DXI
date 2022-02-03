@@ -14,7 +14,7 @@
 #body{
     /*background-color:burlywood;*/
 
-    background: linear-gradient(to right,rgba(var(--red-lite)),rgba(var(--green-lite)));
+    background: linear-gradient(to right,rgba(255, 129, 129),rgba(var(--green-lite)));
     height: 100vh;
 }       
 

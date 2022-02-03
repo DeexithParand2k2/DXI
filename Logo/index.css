@@ -1,0 +1,79 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+:root{
+    --my-black: 0,0,0;
+}
+
+.body{
+    background-color: rgba(var(--my-black),0.9);
+}
+
+.twitLogo{
+    margin:50px;
+    padding:50px;
+    
+    height: 400px;
+    width: 400px;
+
+    /*border: 15px solid;
+    border-color: rgb(0, 255, 0);*/
+    /*border-color: yellow;*/
+    
+    border-radius: 50%;
+
+    background: linear-gradient(to bottom,rgb(143, 255, 231),lightgreen,rgba(0, 255, 0, 0.466));
+    /*background-color: rgba(0,0,0,0.2);*/
+    /*background-color: rgba(255, 255, 255,1);*/
+    /*background-image: radial-gradient(whitesmoke,white);*/
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.d,.i{
+    position: relative;
+    text-transform: capitalize;    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120px;
+    /*color: linear-gradient(to top,rgb(255, 228, 228),rgb(255, 131, 131),red);*/   
+    /*background: -webkit-linear-gradient(rgb(255, 228, 228),rgb(255, 131, 131),red);*/
+    
+    /*background: -webkit-linear-gradient(rgb(143, 255, 231),lightgreen,rgba(0, 255, 0, 0.466));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+
+    color: beige;
+}
+
+.d{
+    margin: 115px;
+}
+
+.i{
+    margin: 115px;
+    left: -15px;
+}
+
+.x1,.x2{
+    position: absolute;
+    height: 350px;
+    width:  15px;
+    /*background: linear-gradient(to top,rgb(255, 228, 228),rgb(255, 131, 131),red);*/
+
+    /*background-color: whitesmoke;*/
+    background: linear-gradient(to top,rgb(143, 255, 231),lightgreen,rgba(0, 255, 0, 0.466));
+}
+
+.x1{
+    transform: rotate(45deg);
+}
+
+.x2{
+    transform: rotate(-45deg);
+}
