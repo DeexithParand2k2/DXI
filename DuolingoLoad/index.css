@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --variable-height: 15px;
+    --variable-width: 15px;
+    --variable-inc-height:25px;
+    --variable-inc-width: 25px;
+}
+  
+
+.mainPage{
+    background-color: white;
+
+    width: 100vw;
+    height: 98vh;
+}
+
+.box{
+    margin: 10px;
+    padding: 20px;
+    background-color: darkslategrey;
+
+    height: 500px;
+    width: 500px;
+    border: 2px white solid;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    /* display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
+    box-sizing: border-box;
+    margin: 2px;
+
+    height: var(--variable-height);
+    width: var(--variable-width);
+    border-radius: 100%;
+
+    background-color: rgba(145, 204, 255, 0.500);
+}
+
+.circle:nth-child(1){
+    animation: one 1s linear infinite;
+}
+
+.circle:nth-child(2){
+    animation: two 1s linear infinite;
+}
+
+.circle:nth-child(3){
+    animation: three 1s linear infinite;
+}
+
+/*
+    background-color: rgba(145, 204, 255, 1);
+    height: 22px;
+    width: 22px;
+*/
+/*
+    background-color: rgba(145, 204, 255, 1);
+    height: var(--variable-inc-height);
+    width: var(--variable-inc-width);
+*/
+
+@keyframes one{
+    0%{
+        background-color: rgba(145, 204, 255, 1);
+        height: var(--variable-inc-height);
+        width: var(--variable-inc-width);
+    } 
+    50%{
+        background-color: rgba(145, 204, 255, 0.5);
+        height: var(--variable-height);
+        width: var(--variable-width);
+    }
+    100%{
+        background-color: rgba(145, 204, 255, 0.5);
+        height: var(--variable-height);
+        width: var(--variable-width);
+    }
+}
+
+@keyframes two{
+    0%{
+        background-color: rgba(145, 204, 255, 0.5);
+        height: var(--variable-height);
+        width: var(--variable-width);
+    }
+    50%{
+        background-color: rgba(145, 204, 255, 1);
+        height: var(--variable-inc-height);
+        width: var(--variable-inc-width);
+    }  
+    100%{
+        background-color: rgba(145, 204, 255, 0.5);
+        height: var(--variable-height);
+        width: var(--variable-width);
+    }
+}
+
+@keyframes three{
+    0%{
+        background-color: rgba(145, 204, 255, 0.5);
+        height: var(--variable-height);
+        width: var(--variable-width);
+    }
+    50%{
+        background-color: rgba(145, 204, 255, 0.5);
+        height: var(--variable-height);
+        width: var(--variable-width);
+    }
+    100%{
+        background-color: rgba(145, 204, 255, 1);
+        height: var(--variable-inc-height);
+        width: var(--variable-inc-width);
+    }
+}
