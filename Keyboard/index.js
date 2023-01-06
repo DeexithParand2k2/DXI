@@ -1,12 +1,11 @@
 //variables
 var temp = document.getElementsByTagName("div")[0];
-var text,value;
+var text,value,ctrlText;
 
-function getKey(){
-    
-    window.addEventListener("keypress", function(e){
-        text = e.key;
-        keyCode = e.keyCode;
-        temp.innerHTML = text.toUpperCase() + "&nbsp;:&nbsp;" + keyCode;
-    },true);
-}
+window.addEventListener("keypress", function(e){
+    text = e.key;
+    ctrlText = e.ctrlKey;
+    keycode = e.keyCode;
+
+    temp.innerHTML = text.toUpperCase() + "&nbsp;:&nbsp;" + keycode + "&nbsp;";
+},true);
